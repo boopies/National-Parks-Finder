@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>National Parks Info Finder</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>National Parks Finder</h1>
+        <form id="js-form">
+            <legend>Which state/s do you want to find parks in?</legend>
+            <select id="selectedState" required>
+                <option value="AZ">Arizona: AZ</option>
+                <option value="AL">Alabama: AL</option> 
+                <option value="AK">Alaska: AK</option>  
+                <option value="AR">Arkansas: AR</option>
+                <option value="CA">California: CA</option>
+                <option value="CO">Colorado: CO</option>
+                <option value="CT">Connecticut: CT</option>
+                <option value="DC">District of Columbia: DC</option>
+                <option value="DE">Delaware: DE</option>
+                <option value="FL">Florida: FL</option>
+                <option value="GA">Georgia: GA</option>
+                <option value="HI">Hawaii: HI</option>
+                <option value="ID">Idaho: ID</option>
+                <option value="IL">Illinois: IL</option>
+                <option value="IN">Indiana: IN</option>
+                <option value="IA">Iowa: IA</option>
+                <option value="KS">Kansas: KS</option>
+                <option value="KY">Kentucky: KY</option>
+                <option value="LA">Louisiana: LA</option>
+                <option value="ME">Maine: ME</option>
+                <option value="MD">Maryland: MD</option>
+                <option value="MA">Massachusetts: MA</option>
+                <option value="MI">Michigan: MI</option>
+                <option value="MN">Minnesota: MN</option>
+                <option value="MS">Mississippi: MS</option>
+                <option value="MO">Missouri: MO</option>
+                <option value="MT">Montana: MT</option>
+                <option value="NE">Nebraska: NE</option>
+                <option value="NV">Nevada: NV</option>
+                <option value="NH">New Hampshire: NH</option>
+                <option value="NJ">New Jersey: NJ</option>
+                <option value="NM">New Mexico: NM</option>
+                <option value="NY">New York: NY</option>
+                <option value="NC">North Carolina: NC</option>
+                <option value="ND">North Dakota: ND</option>
+                <option value="OH">Ohio: OH</option>
+                <option value="OK">Oklahoma: OK</option>
+                <option value="OR">Oregon: OR</option>
+                <option value="PA">Pennsylvania: PA</option>
+                <option value="RI">Rhode Island: RI</option>
+                <option value="SC">South Carolina: SC</option>
+                <option value="SD">South Dakota :SD</option>
+                <option value="TN">Tennessee: TN</option>
+                <option value="TX">Texas: TX</option>
+                <option value="UT">Utah: UT</option>
+                <option value="VT">Vermont: VT</option>
+                <option value="VA">Virginia: VA</option>
+                <option value="WA">Washington: WA</option>
+                <option value="WV">West Virginia: WV</option>
+                <option value="WI">Wisconsin: WI</option>
+                <option value="WY">Wyoming: WY</option>
+             </select>
+            <select id="selectedState2">
+                <option value=""></option>
+                <option value=",AZ">Arizona: AZ</option>
+                <option value=",AL">Alabama: AL</option> 
+                <option value=",AK">Alaska: AK</option>  
+                <option value=",AR">Arkansas: AR</option>
+                <option value=",CA">California: CA</option>
+                <option value=",CO">Colorado: CO</option>
+                <option value=",CT">Connecticut: CT</option>
+                <option value=",DC">District of Columbia: DC</option>
+                <option value=",DE">Delaware: DE</option>
+                <option value=",FL">Florida: FL</option>
+                <option value=",GA">Georgia: GA</option>
+                <option value=",HI">Hawaii: HI</option>
+                <option value=",ID">Idaho: ID</option>
+                <option value=",IL">Illinois: IL</option>
+                <option value=",IN">Indiana: IN</option>
+                <option value=",IA">Iowa: IA</option>
+                <option value=",KS">Kansas: KS</option>
+                <option value=",KY">Kentucky: KY</option>
+                <option value=",LA">Louisiana: LA</option>
+                <option value=",ME">Maine: ME</option>
+                <option value=",MD">Maryland: MD</option>
+                <option value=",MA">Massachusetts: MA</option>
+                <option value=",MI">Michigan: MI</option>
+                <option value=",MN">Minnesota: MN</option>
+                <option value=",MS">Mississippi: MS</option>
+                <option value=",MO">Missouri: MO</option>
+                <option value=",MT">Montana: MT</option>
+                <option value=",NE">Nebraska: NE</option>
+                <option value=",NV">Nevada: NV</option>
+                <option value=",NH">New Hampshire: NH</option>
+                <option value=",NJ">New Jersey: NJ</option>
+                <option value=",NM">New Mexico: NM</option>
+                <option value=",NY">New York: NY</option>
+                <option value=",NC">North Carolina: NC</option>
+                <option value=",ND">North Dakota: ND</option>
+                <option value=",OH">Ohio: OH</option>
+                <option value=",OK">Oklahoma: OK</option>
+                <option value=",OR">Oregon: OR</option>
+                <option value=",PA">Pennsylvania: PA</option>
+                <option value=",RI">Rhode Island: RI</option>
+                <option value=",SC">South Carolina: SC</option>
+                <option value=",SD">South Dakota :SD</option>
+                <option value=",TN">Tennessee: TN</option>
+                <option value=",TX">Texas: TX</option>
+                <option value=",UT">Utah: UT</option>
+                <option value=",VT">Vermont: VT</option>
+                <option value=",VA">Virginia: VA</option>
+                <option value=",WA">Washington: WA</option>
+                <option value=",WV">West Virginia: WV</option>
+                <option value=",WI">Wisconsin: WI</option>
+                <option value=",WY">Wyoming: WY</option>
+                </select>
+            <select id="selectedState3">
+                    <option value=""></option>
+                    <option value=",AZ">Arizona: AZ</option>
+                    <option value=",AL">Alabama: AL</option> 
+                    <option value=",AK">Alaska: AK</option>  
+                    <option value=",AR">Arkansas: AR</option>
+                    <option value=",CA">California: CA</option>
+                    <option value=",CO">Colorado: CO</option>
+                    <option value=",CT">Connecticut: CT</option>
+                    <option value=",DC">District of Columbia: DC</option>
+                    <option value=",DE">Delaware: DE</option>
+                    <option value=",FL">Florida: FL</option>
+                    <option value=",GA">Georgia: GA</option>
+                    <option value=",HI">Hawaii: HI</option>
+                    <option value=",ID">Idaho: ID</option>
+                    <option value=",IL">Illinois: IL</option>
+                    <option value=",IN">Indiana: IN</option>
+                    <option value=",IA">Iowa: IA</option>
+                    <option value=",KS">Kansas: KS</option>
+                    <option value=",KY">Kentucky: KY</option>
+                    <option value=",LA">Louisiana: LA</option>
+                    <option value=",ME">Maine: ME</option>
+                    <option value=",MD">Maryland: MD</option>
+                    <option value=",MA">Massachusetts: MA</option>
+                    <option value=",MI">Michigan: MI</option>
+                    <option value=",MN">Minnesota: MN</option>
+                    <option value=",MS">Mississippi: MS</option>
+                    <option value=",MO">Missouri: MO</option>
+                    <option value=",MT">Montana: MT</option>
+                    <option value=",NE">Nebraska: NE</option>
+                    <option value=",NV">Nevada: NV</option>
+                    <option value=",NH">New Hampshire: NH</option>
+                    <option value=",NJ">New Jersey: NJ</option>
+                    <option value=",NM">New Mexico: NM</option>
+                    <option value=",NY">New York: NY</option>
+                    <option value=",NC">North Carolina: NC</option>
+                    <option value=",ND">North Dakota: ND</option>
+                    <option value=",OH">Ohio: OH</option>
+                    <option value=",OK">Oklahoma: OK</option>
+                    <option value=",OR">Oregon: OR</option>
+                    <option value=",PA">Pennsylvania: PA</option>
+                    <option value=",RI">Rhode Island: RI</option>
+                    <option value=",SC">South Carolina: SC</option>
+                    <option value=",SD">South Dakota :SD</option>
+                    <option value=",TN">Tennessee: TN</option>
+                    <option value=",TX">Texas: TX</option>
+                    <option value=",UT">Utah: UT</option>
+                    <option value=",VT">Vermont: VT</option>
+                    <option value=",VA">Virginia: VA</option>
+                    <option value=",WA">Washington: WA</option>
+                    <option value=",WV">West Virginia: WV</option>
+                    <option value=",WI">Wisconsin: WI</option>
+                    <option value=",WY">Wyoming: WY</option>
+                </select>
+                <br />
+            <label for="max-results">Maximum results to return</label>
+            <input type="number" name="max-results" id="js-max-results" value="10">
+
+            <input type="submit" value="Go!">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+            <h2>Search results for "<em><span id="searched-string"></span></em>"</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
