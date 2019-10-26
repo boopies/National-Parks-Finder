@@ -11,7 +11,7 @@ function formatQueryParams(params) {
 
 function displayResults(responseJson) {
   // if there are previous results, remove them
-  console.log(responseJson)
+  console.log(responseJson);
   $('#searched-string').append(`${searchWord}`);
   $('#results-list').empty();
   // iterate through the items array
